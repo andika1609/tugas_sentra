@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.board {
+  /* height: 730px; */
+  min-height: 100%;
+}
+
+#board1 {
+  width: 20%;
+  float: left;
+  background-color: #22577a;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.main {
+  height: fit-content+2rem;
+  width: 30rem;
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 0.37rem;
+}
+
+.sidenav {
+  height: 100%;
+  position: fixed;
+  width: 20%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  /* background-color: #111; */
+  overflow-x: hidden;
+}
+
+#board2 {
+  width: 80%;
+  float: right;
+  background-color: #57cc99;
+}
+.page {
+  width: fit-content;
+  margin: 10px auto 0 auto;
+}
+#user {
+  height: 86px;
+  border: 1.5px solid black;
+  border-radius: 100%;
+}
+p.subid {
+  font-family: "Poppins";
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 12px;
+  margin-bottom: 0em;
+}
+.coat {
+  width: fit-content;
+  margin: 0 auto;
+}
+#btn {
+  border: 1px solid black;
+  padding: 0 3px;
+}
+div.searchbar.mt-2{
+  width: fit-content;
+  margin: 0 auto;
+}
+#searchText{
+  width: 12rem;
+}
+#inputAddres{
+  margin-left: 0.37rem;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    width: 100%;
+  }
+
+  #inputAddres{   
+    margin-left: 0;
+    margin-top: 0.3rem;
+  }
+  #board1{
+    display: none;
+  }
+  #board2{
+    width: 100%;
+  }
+  .main{
+    height: fit-content;
+    font-size: 12px;
+    width: 20rem;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 0.37rem;
+  }
+}
